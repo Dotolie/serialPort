@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ff508010"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_Send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                android:text="Send Text! Hello"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:id="@+id/et_recive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:gravity="top"
+                android:inputType="textShortMessage|textMultiLine|textPersonName"
+                android:scrollbars="vertical"
+                android:textAlignment="viewStart"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_open"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="OPEN" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_getver"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Get Ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_enroll"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Enrollment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/bt_verify"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="verify" />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="CLEAR" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_close"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="CLOSE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/bt_quit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="QUIT" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
